@@ -53,6 +53,10 @@ class Customer {
     return new Customer(customer);
   }
 
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
   /** get all reservations for this customer. */
 
   async getReservations() {
@@ -78,6 +82,8 @@ class Customer {
       );
     }
   }
+
+
 }
 
 module.exports = Customer;
